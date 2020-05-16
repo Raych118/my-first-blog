@@ -1,3 +1,4 @@
+{% extends 'blog/base.html' %}
 <!DOCTYPE html>
 {% load static %}
 <html>
@@ -5,21 +6,25 @@
 	<title>Buttercup's Blog</title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	<link href="{% static 'css/blog.css'%}" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="header">
-		<h1><a href="/"> Welcome To Buttercup's Blog</a></h1>
-	</div>
+	<header class="main-header" >
+		<h1><a href="/">Welcome To Buttercup's Blog</a></h1> 
+	</header>
 	<br>
 	<br/>
 	<br/>
+  
+  {% block content %}
+	<div class ="card">
 
 	<div>
 		<h2><a href="">Welcome Ladies & Gentlemen</a></h2>
+		<div class = "headline"> Forum:</div>
 		<p> This blog focuses on THE SCIENCE OF RELIGION in relation to THE STRING THEORY which is a subdivision of THE UNIFIED FIELD THEORY .... Newton died trying to solve this piece of the puzzle he had been provided by his study of physics and the universe. Here we air our views on how these two topics relate and how one can inherently feed on the other. Some would even argue that the reason Newton failed to solve this mystery and died trying was because he failed to accept that not everything runs on science and all he had to do was turn his mind slightly to involve the spiritual to discover what exactly lay behind this force he realised governed the world as a "bubble universe" (in scientific terms). </p>
-			<p>published: 07:05:2020, 0000</p>
+			<div class= "date"><p>published: 07:05:2020, 0000</p></div>
 	</div>
 
 	<br>
@@ -28,9 +33,22 @@
 
 	<div>
 		<h2><a href="">First Forum</a></h2>
+		<div class= "headline"> Forum:</div>
 		<p> Perhaps you've always been interested in things out of the ordinary but you've never really done deep research on any of them. This first post aims to introduce you to Newton, his work and his views on THE UNIFIED FIELD THEORY. Feel free to send in any additions and remarks that you feel would add life and substance to this portion of the blog. </p>
-		<p> published 08:05:2020, 0000</p>
+		<div class= "date"><p> published 08:05:2020, 0000</p></div>
 	</div>
+    <br/>
+	<br/>
+	<br/>
+
+	<div>
+		<h2><a href="">Second Forum</a></h2>
+		<div class= "headline"> Forum:</div>
+		<p> String theory represents a major dream of theoretical physicists — a description of all forces and matter in one mathematical picture. But after countless papers, conferences and dry-erase markers, the breathtaking breakthrough many once hoped for seems further away than ever. Nevertheless, even without signs of flashy progress, the resulting insight has left a deep imprint on both physics and math. Like it or not (and some physicists certainly don't) string theory is here to stay.  </p>
+		<div class= "date"><p> published 09:05:2020, 0000</p></div>
+	</div>
+</div>
+{% endblock %}
 
 </body>
 </html>

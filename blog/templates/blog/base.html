@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Buttercup's Blog</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="{% static 'css/blog.css'%}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header class="main-header" >
+		<h1><a href="/"> Welcome To Buttercup's Blog</a></h1> 
+	</header>
+	<br>
+	<br/>
+	<br/>
+
+<div class ="card">
+
+	
+			{% block content %}
+			{% endblock %}
+</div>
+</body>
+</html>

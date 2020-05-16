@@ -1,14 +1,48 @@
 body{
-	width: 80%;
 	
+	background-color: pink;
 }
 
 h1 a{
-    color: black;
-    font-family: 'Lobster';
-    padding-left: 50px;
+    color: white;
+    padding-left:480px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
   }
 
-  .header{
+h2 a{
+	color: #600;
+}
 
+.main-header{
+	 padding: 20px 20px 20px 40px;
+    background-color: black;
+    background-size: 100%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New';
+    background-color: white;
   }
+
+  .headline{
+        font-family: Georgia,"Times New Roman",serif;
+ font-size: 12px;
+ font-weight: bold;
+ color: #600;
+ line-height: 22px;
+ margin: 0;
+ text-transform: uppercase;
+ letter-spacing: 1px
+}
+ 
+.date{
+        font-family: Georgia,"Times New Roman",serif;
+ font-size: 10px;
+ line-height: 22px;
+ text-transform: uppercase;
+ letter-spacing: 2px; 
+}
